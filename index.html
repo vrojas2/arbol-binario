@@ -1,12 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Arbol binario</title>
 </head>
+
 <body>
-    
+    <div>
+        <h3>Agregar producto</h3>
+        <form>
+            <label>Código: </label>
+            <input id="codigo" type="number">
+            <label>Nombre: </label>
+            <input id="nombre" type="text">
+            <label>Precio: </label>
+            <input id="costo" type="number">
+            <label>Cantidad: </label>
+            <input id="cantidad" type="number">
+            <label>Descripción: </label>
+            <input id="descripcion" type="text">
+            <button id="btnAgregar" type="button">Agregar</button>
+        </form>
+        <h3>Buscar producto</h3>
+        <form>
+            <label>Código: </label>
+            <input id="busquedaCodigo" type="number">
+            <button id="btnBusqueda" type="button">Buscar</button>
+            <div id="buscar"></div>
+        </form><br>
+        <div>
+            <button id="btnInOrder">Mostrar InOrder</button>
+            <button id="btnPreOrder">Mostrar PreOrder</button>
+            <button id="btnPostOrder">Mostrar PostOrder</button>
+        </div>
+    </div>
+    <div>
+        <h2>Inventario</h2>
+        <div id="inventario"></div>
+    </div><br>
 </body>
+<script src="./main.js" type="module"></script>
+
 </html>
